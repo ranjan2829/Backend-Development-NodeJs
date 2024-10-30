@@ -1,5 +1,16 @@
 let name ="Ranjan";
 let future="Coder";
 let sex="MAle";
-let id="ranjan.com";
+let id=10;
+id++;
+id++;
+let num1=20;
+let num2=40;
+console.log(num1+num2);
+console.log(num1-num2);
+console.log(num1*num2);
+console.log(num1/num2);
+console.log(num1%num2);
+console.log(num1**0);
+
 console.log(name,future,sex,id)
