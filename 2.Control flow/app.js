@@ -8,18 +8,30 @@
 // }
 // else{
 //     console.log("Trueee!!!!")
+// // }
+// let time = 50;
+// let greetings;
+// if (time < 10) {
+//     greetings = "Good Morning";
+//     console.log(greetings);
+// } 
+// else if (time < 20) {
+//     greetings = "Good Day"; 1
+//     console.log(greetings);
+// } 
+// else {
+// greetings = "Good Evening";
+// console.log(greetings);
 // }
-let time = 50;
-let greetings;
-if (time < 10) {
-    greetings = "Good Morning";
-    console.log(greetings);
-} 
-else if (time < 20) {
-    greetings = "Good Day"; 1
-    console.log(greetings);
-} 
-else {
-greetings = "Good Evening";
-console.log(greetings);
+
+let x=10;
+let test="";
+switch (x){
+    case 0:
+        text="o";
+        break;
+    case 10:
+        text="10!!";
+        console.log(text)
+        break;
 }
