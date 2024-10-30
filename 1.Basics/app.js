@@ -14,3 +14,5 @@
 // console.log(num1**0);
 
 console.log("Hii")
+console.log(11===11);
+console.log(11!==21);
