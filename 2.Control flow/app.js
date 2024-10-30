@@ -36,10 +36,15 @@
 //         break;
 // }
 
-for(let i =1;i<= 10;i++){
+// for(let i =1;i<= 10;i++){
     
-    console.log("OUTER LOOP",i);
-    for(let j=1;j<=5;j++){
-        console.log("Ranjan inner loop",j)
-    }
-}
+//     console.log("OUTER LOOP",i);
+//     for(let j=1;j<=5;j++){
+//         console.log("Ranjan inner loop",j)
+//     }
+// }
+// let array=[1,2,3,4,5,6,7,8,9,10];
+// for (let idx=0;idx<array.length;idx++){
+//     const element=array[idx];
+//     console.log(idx)
+// }
