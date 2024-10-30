@@ -24,14 +24,22 @@
 // console.log(greetings);
 // }
 
-let x=10;
-let test="";
-switch (x){
-    case 0:
-        text="o";
-        break;
-    case 10:
-        text="10!!";
-        console.log(text)
-        break;
+// let x=10;
+// let test="";
+// switch (x){
+//     case 0:
+//         text="o";
+//         break;
+//     case 10:
+//         text="10!!";
+//         console.log(text)
+//         break;
+// }
+
+for(let i =1;i<= 10;i++){
+    
+    console.log("OUTER LOOP",i);
+    for(let j=1;j<=5;j++){
+        console.log("Ranjan inner loop",j)
+    }
 }
