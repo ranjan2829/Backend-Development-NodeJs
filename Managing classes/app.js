@@ -6,3 +6,9 @@ h2.classList.add("greetings");
 const body=document.body;
 body.appendChild(h2);
 console.log(h2);
+
+const ul =document.querySelector("ul")
+
+const newli=document.createElement("li");
+newli.innerText="lolol";
+ul.appendChild(newli);
