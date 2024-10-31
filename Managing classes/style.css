@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box{
+    padding:30px;
+    border:1px solid white;
+    border-radius:10px;
+    
+}
