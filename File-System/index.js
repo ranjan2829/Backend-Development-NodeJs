@@ -8,3 +8,5 @@ if(!fs.existsSync(dataFolder)){
 const filePath=path.join(dataFolder,"exam.txt");
 fs.writeFileSync(filePath,"Hello , !");
 console.log("file created !")
+const c=fs.readFileSync(filePath,'utf-8');
+console.log(c);
