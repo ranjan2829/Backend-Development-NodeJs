@@ -7,3 +7,5 @@ setTimeout(()=>{
 
 
 },2000)
+const add=require("./sum");
+console.log(add.sum(4,5));

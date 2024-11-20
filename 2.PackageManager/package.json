@@ -1,0 +1,22 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "nice",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "."
+  ],
+  "author": ".",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
