@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (e) => {
     const keys = document.querySelectorAll('.key');
 
     const removeTransition = (e) => {
