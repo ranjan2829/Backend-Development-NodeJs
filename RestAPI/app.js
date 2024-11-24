@@ -11,7 +11,7 @@ let books = [
     { id: '5', title: "Book 5" }
 ];
 
-// Welcome message
+
 app.get("/", (req, res) => {
     res.json({
         message: "Welcome to Goa Singham!"
@@ -42,7 +42,47 @@ app.post("/add", (req, res) => {
     books.push(newBook);
     res.status(201).json(newBook); // Status 201 for resource creation
 });
+app.put("/update/:id",(req,res)=>{
+    const find=books.find(
+        (bookitem) =>bookitem.id ===req.params.id
+    );
+    if(find){
+        find.title=req.body.title || find.title;
+    
+        res.status(200).json({
+            message:"Book id updated",
+            data:find
+        });
+    }
+    else{
+        res.status(404).json({
+            message:"Book not Found",
+        });
+    }
 
+
+});
+app.delete("/delete/:id",(req,res)=>{
+    const find=books.findIndex(
+        (item)=>item.id===req.params.id
+    );
+    if(find!==-1){
+        const deleteBook=books.splice(find,1);
+        res.status(200).json({
+            message:"Book deleted",
+            data:deleteBook[0],
+
+        });
+
+
+    }
+    else{
+        res.status(404).json({
+            message:"Book not Found",
+        });
+    }
+
+});
 // Start the server
 const port = 3000;
 app.listen(port, () => {
