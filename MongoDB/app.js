@@ -35,6 +35,10 @@ async function AddRecord() {
         });
 
         console.log("New user created: ", newUser); 
+        const gettrue=await User.find({isActive:true});
+        console.log(gettrue);
+        const selectedFields = await User.find().select("name email -_id");
+        console.log(selectedFields);
 
     } catch (err) {
         console.error("Error creating user: ", err); 
